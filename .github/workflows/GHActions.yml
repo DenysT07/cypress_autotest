@@ -10,9 +10,6 @@ jobs:
         with:
           browser: chrome
           record: true  
-        env:
-          CYPRESS_RECORD_KEY: ${{ '3761d417-6eb2-48d8-8f25-1d31f5229ff0' }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload report
         uses: JamesIves/github-pages-deploy-action@v4
         if: always()
