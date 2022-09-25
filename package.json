@@ -6,7 +6,7 @@
   "scripts": {
     "cy:squareConfig": "npx cypress run --config-file cypress/configs/config.square.js",
     "cy:verticalConfig": "npx cypress run --config-file cypress/configs/config.vertical.js",
-    "test": "npx cypress run --browser chrome --config-file cypress.config.js --headed"
+    "test": "npx cypress run --browser chrome --config-file cypress.config.js "
   },
   "author": "Denis Terpylo",
   "license": "ISC",

@@ -75,7 +75,7 @@ describe('registration forms tests', () => {
     );
   });
 
-  xit('check registrations for becoming a Telnix Partner on the Partners page ', () => {
+  it('check registrations for becoming a Telnix Partner on the Partners page ', () => {
     mainPage.rightMenueClick()
     mainPage.companyButtclick()
     mainPage.partnerButtClick()
@@ -93,7 +93,7 @@ describe('registration forms tests', () => {
     cy.url({ timeout: 20000 }).should('contains', 'https://telnyx.com/company/partnerships?') // there is a bug, i decided to check actual URL to pass this test
   });
 
-  xit('check registrations for the Waitlist on the storage page ', () => {
+  it('check registrations for the Waitlist on the storage page ', () => {
     mainPage.rightMenueClick()
     mainPage.productsButtcClick()
     mainPage.storageButtClock()
@@ -110,9 +110,9 @@ describe('registration forms tests', () => {
       "You're on the waitlist!"
     );
   });
-})
-describe('Functional tests', () => {
-  it('check link to the Postman colection', () => {
+// })
+// describe('Functional tests', () => {
+  xit('check link to the Postman colection', () => {
     mainPage.rightMenueClick()
     mainPage.productsButtcClick()
     mainPage.seeAllProductsButtClick()
@@ -123,7 +123,7 @@ describe('Functional tests', () => {
     cy.url({ timeout: 20000 }).should('contains', 'd8c640348288')
   });
 
-  it('check live chat in Developer Docs', () => {
+  xit('check live chat in Developer Docs', () => {
     mainPage.rightMenueClick()
     mainPage.resourcesButtclick()
     mainPage.devDocsButtclick()
@@ -141,7 +141,7 @@ describe('Functional tests', () => {
     );
   });
 
-  it('check search field in the "Blog" page', () => {
+  xit('check search field in the "Blog" page', () => {
     mainPage.rightMenueClick()
     mainPage.resourcesButtclick()
     mainPage.blogeButtClick()
@@ -151,7 +151,7 @@ describe('Functional tests', () => {
     blogPage.entruTitle.should('have.text', 'Programmable fax - switch from Twilio to Telnyx ')
   })
 
-  it('check the search field in the developer docs', () => {
+  xit('check the search field in the developer docs', () => {
     mainPage.rightMenueClick()
     mainPage.resourcesButtclick()
     mainPage.devDocsButtclick()
@@ -160,7 +160,8 @@ describe('Functional tests', () => {
     cy.contains(' Services in Europe').click({ force: true })
     devDocsPage.mainEntryTitle.should('have.text', 'Voice API Services in Europe')
   })
-  xit('Check Savings Calculator', () => {
+
+  it('Check Savings Calculator', () => {
     mainPage.rightMenueClick()
     mainPage.resourcesButtclick()
     mainPage.CalculatorButtClick()
