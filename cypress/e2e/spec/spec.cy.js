@@ -20,8 +20,8 @@ before('open site', () => {
   mainPage.ClickCross()
 })
 
-xdescribe('registration forms tests', () => {
-  xit('Check registration page', () => {
+describe('registration forms tests', () => {
+  it('Check registration page', () => {
     mainPage.singUpClick()
     registrationPage.fillNameField(randomstring)
     registrationPage.fillEmailField(randomstring + '@gmail.com')
