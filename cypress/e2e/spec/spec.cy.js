@@ -118,7 +118,7 @@ describe('Functional tests', () => {
     mainPage.seeAllProductsButtClick()
     faxApiPage.faxApiButtClick()
     faxApiPage.exploreTheDocButtClick()
-    cy.contains('See the Specs').click()
+    cy.contains('See the Specs').click({force: true})
     // cy.wait(3000)
     // cy.scrollTo('top')
     // faxApiPage.seeTheSpecButtclick()
