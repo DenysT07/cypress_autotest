@@ -17,4 +17,4 @@ jobs:
         if: always()
         with:
           branch: gh-pages
-          folder: cypress/reports/html/
+          folder: D:\cypress\cypress_autotest\cypress\reports\html
