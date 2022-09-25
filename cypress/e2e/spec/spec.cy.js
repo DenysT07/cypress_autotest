@@ -126,7 +126,7 @@ describe('Functional tests', () => {
     // cy.scrollTo('top')
     // faxApiPage.seeTheSpecButtclick()
     // cy.wait(3000)
-    faxApiPage.runInPostmanButtClick({force: true})
+    faxApiPage.runInPostmanButtClick()
     cy.url({ timeout: 20000 }).should('contains', 'postman.com')
   });
 
