@@ -1,0 +1,16 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "telnyx autotest",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Denis Terpylo",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.31.0",
+    "cypress": "^10.8.0",
+    "cypress-mochawesome-reporter": "^3.2.2"
+  }
+}
