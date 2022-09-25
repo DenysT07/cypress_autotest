@@ -118,9 +118,11 @@ describe('Functional tests', () => {
     mainPage.seeAllProductsButtClick()
     faxApiPage.faxApiButtClick()
     faxApiPage.exploreTheDocButtClick()
+    cy.wait(3000)
     faxApiPage.seeTheSpecButtclick()
+    cy.wait(3000)
     faxApiPage.runInPostmanButtClick()
-    cy.url({ timeout: 20000 }).should('contains', 'd8c640348288')
+    cy.url({ timeout: 20000 }).should('contains', 'postman.com')
   });
 
   it('check live chat in Developer Docs', () => {
