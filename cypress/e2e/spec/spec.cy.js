@@ -119,6 +119,7 @@ describe('Functional tests', () => {
     faxApiPage.faxApiButtClick()
     faxApiPage.exploreTheDocButtClick()
     cy.wait(3000)
+    cy.scrollTo('top')
     faxApiPage.seeTheSpecButtclick()
     cy.wait(3000)
     faxApiPage.runInPostmanButtClick()
