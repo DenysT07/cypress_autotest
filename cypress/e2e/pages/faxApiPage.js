@@ -1,6 +1,6 @@
 const faxApiButtLoc = '[class*="cyeF"]>[href*="fax"]'
 const exploreTheDocButtLoc = 'div>span>a[href*="e-fax"]'
-const seeTheSpecButtLoc = '[class*="govPYh"]>[href="/docs/api/v2/programmable-fax"]'
+const seeTheSpecButtLoc = '[class*="ewCCKw"]'
 const runInPostmanButtLoc = '[alt="Run in Postman"]'
 
 class faxApiPage {
