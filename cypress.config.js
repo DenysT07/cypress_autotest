@@ -5,8 +5,8 @@ module.exports = defineConfig({
   video: false,
   "chromeWebSecurity": false,
   reporter: 'cypress-mochawesome-reporter',
-  viewportWidth: 1080,
-  viewportHeight: 1920,
+  viewportWidth: 1000,
+  viewportHeight: 800,
   e2e: {
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
