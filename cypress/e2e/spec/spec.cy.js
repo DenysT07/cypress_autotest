@@ -110,9 +110,9 @@ describe('registration forms tests', () => {
       "You're on the waitlist!"
     );
   });
-// })
-// describe('Functional tests', () => {
-  xit('check link to the Postman colection', () => {
+})
+describe('Functional tests', () => {
+  it('check link to the Postman colection', () => {
     mainPage.rightMenueClick()
     mainPage.productsButtcClick()
     mainPage.seeAllProductsButtClick()
@@ -123,7 +123,7 @@ describe('registration forms tests', () => {
     cy.url({ timeout: 20000 }).should('contains', 'd8c640348288')
   });
 
-  xit('check live chat in Developer Docs', () => {
+  it('check live chat in Developer Docs', () => {
     mainPage.rightMenueClick()
     mainPage.resourcesButtclick()
     mainPage.devDocsButtclick()
@@ -141,7 +141,7 @@ describe('registration forms tests', () => {
     );
   });
 
-  xit('check search field in the "Blog" page', () => {
+  it('check search field in the "Blog" page', () => {
     mainPage.rightMenueClick()
     mainPage.resourcesButtclick()
     mainPage.blogeButtClick()
@@ -151,7 +151,7 @@ describe('registration forms tests', () => {
     blogPage.entruTitle.should('have.text', 'Programmable fax - switch from Twilio to Telnyx ')
   })
 
-  xit('check the search field in the developer docs', () => {
+  it('check the search field in the developer docs', () => {
     mainPage.rightMenueClick()
     mainPage.resourcesButtclick()
     mainPage.devDocsButtclick()
