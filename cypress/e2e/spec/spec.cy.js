@@ -37,7 +37,7 @@ describe('registration forms tests', () => {
     )
   })
 
-  xit('Check the "Talk to an expert" page', () => {
+  it('Check the "Talk to an expert" page', () => {
     mainPage.rightMenueClick()
     mainPage.talkToAnExpertButt()
     talkToAnExpertPage.reasonDroplistSelect('Support')
@@ -56,7 +56,7 @@ describe('registration forms tests', () => {
     );
   })
 
-  xit('check registration for beta testing on the integration page', () => {
+  it('check registration for beta testing on the integration page', () => {
     mainPage.rightMenueClick()
     mainPage.companyButtclick()
     mainPage.integrationButtClick({ timeout: 2000 })
@@ -75,7 +75,7 @@ describe('registration forms tests', () => {
     );
   });
 
-  xit('check registrations for becoming a Telnix Partner on the Partners page ', () => {
+  it('check registrations for becoming a Telnix Partner on the Partners page ', () => {
     mainPage.rightMenueClick()
     mainPage.companyButtclick()
     mainPage.partnerButtClick()
@@ -112,7 +112,7 @@ describe('registration forms tests', () => {
   });
 })
 describe('Functional tests', () => {
-  xit('check link to the Postman colection', () => {
+  it('check link to the Postman colection', () => {
     mainPage.rightMenueClick()
     mainPage.productsButtcClick()
     mainPage.seeAllProductsButtClick()
@@ -123,7 +123,7 @@ describe('Functional tests', () => {
     cy.url({ timeout: 20000 }).should('contains', 'd8c640348288')
   });
 
-  xit('check live chat in Developer Docs', () => {
+  it('check live chat in Developer Docs', () => {
     mainPage.rightMenueClick()
     mainPage.resourcesButtclick()
     mainPage.devDocsButtclick()
@@ -141,7 +141,7 @@ describe('Functional tests', () => {
     );
   });
 
-  xit('check search field in the "Blog" page', () => {
+  it('check search field in the "Blog" page', () => {
     mainPage.rightMenueClick()
     mainPage.resourcesButtclick()
     mainPage.blogeButtClick()
@@ -160,7 +160,7 @@ describe('Functional tests', () => {
     cy.contains(' Services in Europe').click({ force: true })
     devDocsPage.mainEntryTitle.should('have.text', 'Voice API Services in Europe')
   })
-  xit('Check Savings Calculator', () => {
+  it('Check Savings Calculator', () => {
     mainPage.rightMenueClick()
     mainPage.resourcesButtclick()
     mainPage.CalculatorButtClick()
