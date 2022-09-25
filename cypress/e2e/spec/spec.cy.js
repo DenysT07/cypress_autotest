@@ -37,7 +37,7 @@ describe('registration forms tests', () => {
     )
   })
 
-  it('Check the "Talk to an expert" page', () => {
+  xit('Check the "Talk to an expert" page', () => {
     mainPage.rightMenueClick()
     mainPage.talkToAnExpertButt()
     talkToAnExpertPage.reasonDroplistSelect('Support')
@@ -56,7 +56,7 @@ describe('registration forms tests', () => {
     );
   })
 
-  it('check registration for beta testing on the integration page', () => {
+  xit('check registration for beta testing on the integration page', () => {
     mainPage.rightMenueClick()
     mainPage.companyButtclick()
     mainPage.integrationButtClick({ timeout: 2000 })
@@ -75,7 +75,7 @@ describe('registration forms tests', () => {
     );
   });
 
-  it('check registrations for becoming a Telnix Partner on the Partners page ', () => {
+  xit('check registrations for becoming a Telnix Partner on the Partners page ', () => {
     mainPage.rightMenueClick()
     mainPage.companyButtclick()
     mainPage.partnerButtClick()
