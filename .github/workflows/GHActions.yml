@@ -13,9 +13,8 @@ jobs:
         env:
           CYPRESS_RECORD_KEY: ${{ '3761d417-6eb2-48d8-8f25-1d31f5229ff0' }}
       - name: Upload report
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: JamesIves/github-pages-deploy-action@v4.1.4
         if: always()
         with:
           branch: gh-pages
           folder: cypress/reports/html/
-          target-folder: docs
