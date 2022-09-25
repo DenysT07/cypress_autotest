@@ -151,7 +151,7 @@ describe('Functional tests', () => {
     blogPage.entruTitle.should('have.text', 'Programmable fax - switch from Twilio to Telnyx ')
   })
 
-  xit('check the search field in the developer docs', () => {
+  it('check the search field in the developer docs', () => {
     mainPage.rightMenueClick()
     mainPage.resourcesButtclick()
     mainPage.devDocsButtclick()
@@ -160,7 +160,7 @@ describe('Functional tests', () => {
     cy.contains(' Services in Europe').click({ force: true })
     devDocsPage.mainEntryTitle.should('have.text', 'Voice API Services in Europe')
   })
-  it('Check Savings Calculator', () => {
+  xit('Check Savings Calculator', () => {
     mainPage.rightMenueClick()
     mainPage.resourcesButtclick()
     mainPage.CalculatorButtClick()
