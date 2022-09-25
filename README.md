@@ -1,6 +1,9 @@
 # telnyx_autotest
 
-This project tests site https://telnyx.com/ useing cypress IO
+This project tests site https://telnyx.com/ using cypress IO
+
+Language: JavaScript
+
 to download:
 1. install Visual Studio Code
 2. do git clone
