@@ -20,7 +20,7 @@ before('open site', () => {
   mainPage.ClickCross()
 })
 
-xdescribe('registration forms tests', () => {
+describe('registration forms tests', () => {
   it('Check registration page', () => {
     mainPage.singUpClick()
     registrationPage.fillNameField(randomstring)
@@ -29,7 +29,7 @@ xdescribe('registration forms tests', () => {
     registrationPage.clickBothCheckBoxes()
     registrationPage.clickCreataAccounyButt()
     cy.wait(10000)
-    registrationPage.clickCreataAccounyButt() //to pass the recapcha need to press the button two times, work only in chrome
+    registrationPage.clickCreataAccounyButt()
     cy.wait(10000)
     registrationPage.sendEmailMessage.should(
       "have.text",
@@ -121,16 +121,12 @@ describe('Functional tests', () => {
     cy.wait(3000)
     cy.scrollTo('top')
     cy.wait(3000)
-    cy.contains('See the Specs').click({force: true})
-    // cy.wait(3000)
-    // cy.scrollTo('top')
-    // faxApiPage.seeTheSpecButtclick()
-    // cy.wait(3000)
+    cy.contains('See the Specs').click({ force: true })
     faxApiPage.runInPostmanButtClick()
     cy.url({ timeout: 20000 }).should('contains', 'postman.com')
   });
 
-  xit('check live chat in Developer Docs', () => {
+  it('check live chat in Developer Docs', () => {
     mainPage.rightMenueClick()
     mainPage.resourcesButtclick()
     mainPage.devDocsButtclick()
@@ -148,7 +144,7 @@ describe('Functional tests', () => {
     );
   });
 
-  xit('check search field in the "Blog" page', () => {
+  it('check search field in the "Blog" page', () => {
     mainPage.rightMenueClick()
     mainPage.resourcesButtclick()
     mainPage.blogeButtClick()
@@ -158,7 +154,7 @@ describe('Functional tests', () => {
     blogPage.entruTitle.should('have.text', 'Programmable fax - switch from Twilio to Telnyx ')
   })
 
-  xit('check the search field in the developer docs', () => {
+  it('check the search field in the developer docs', () => {
     mainPage.rightMenueClick()
     mainPage.resourcesButtclick()
     mainPage.devDocsButtclick()
@@ -168,7 +164,7 @@ describe('Functional tests', () => {
     devDocsPage.mainEntryTitle.should('have.text', 'Voice API Services in Europe')
   })
 
-  xit('Check Savings Calculator', () => {
+  it('Check Savings Calculator', () => {
     mainPage.rightMenueClick()
     mainPage.resourcesButtclick()
     mainPage.CalculatorButtClick()

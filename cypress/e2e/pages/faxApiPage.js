@@ -14,7 +14,7 @@ class faxApiPage {
         cy.get(seeTheSpecButtLoc).click()
     }
     runInPostmanButtClick() {
-        cy.get(runInPostmanButtLoc).click({force: true})
+        cy.get(runInPostmanButtLoc).click({ force: true })
     }
 }
 export default new faxApiPage();

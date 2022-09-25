@@ -1,9 +1,9 @@
-name: E2E on Chrome
+name: autotest_telnix
 on: [push]
 jobs:
   cypress-run:
     runs-on: ubuntu-20.04
-    name: Tests on chrome
+    name: Tests
     steps:
       - uses: actions/checkout@v2  
       - uses: cypress-io/github-action@v4
