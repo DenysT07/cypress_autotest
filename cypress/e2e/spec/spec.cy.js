@@ -20,7 +20,7 @@ before('open site', () => {
   mainPage.ClickCross()
 })
 
-describe('registration forms tests', () => {
+xdescribe('registration forms tests', () => {
   xit('Check registration page', () => {
     mainPage.singUpClick()
     registrationPage.fillNameField(randomstring)
@@ -112,7 +112,7 @@ describe('registration forms tests', () => {
   });
 })
 describe('Functional tests', () => {
-  it('check link to the Postman colection', () => {
+  xit('check link to the Postman colection', () => {
     mainPage.rightMenueClick()
     mainPage.productsButtcClick()
     mainPage.seeAllProductsButtClick()
@@ -123,7 +123,7 @@ describe('Functional tests', () => {
     cy.url({ timeout: 20000 }).should('contains', 'd8c640348288')
   });
 
-  it('check live chat in Developer Docs', () => {
+  xit('check live chat in Developer Docs', () => {
     mainPage.rightMenueClick()
     mainPage.resourcesButtclick()
     mainPage.devDocsButtclick()
@@ -141,7 +141,7 @@ describe('Functional tests', () => {
     );
   });
 
-  it('check search field in the "Blog" page', () => {
+  xit('check search field in the "Blog" page', () => {
     mainPage.rightMenueClick()
     mainPage.resourcesButtclick()
     mainPage.blogeButtClick()
@@ -151,7 +151,7 @@ describe('Functional tests', () => {
     blogPage.entruTitle.should('have.text', 'Programmable fax - switch from Twilio to Telnyx ')
   })
 
-  it('check the search field in the developer docs', () => {
+  xit('check the search field in the developer docs', () => {
     mainPage.rightMenueClick()
     mainPage.resourcesButtclick()
     mainPage.devDocsButtclick()
