@@ -2,6 +2,7 @@ const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
   projectId: '4vv8dq',
+  video: false,
   "chromeWebSecurity": false,
   reporter: 'cypress-mochawesome-reporter',
   viewportWidth: 1080,
