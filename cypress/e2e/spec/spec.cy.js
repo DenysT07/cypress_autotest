@@ -164,6 +164,7 @@ describe('Functional tests', () => {
     devDocsPage.mainEntryTitle.should('have.text', 'Voice API Services in Europe')
   })
 
+  
   it('Check Savings Calculator', () => {
     mainPage.rightMenueClick()
     mainPage.resourcesButtclick()
